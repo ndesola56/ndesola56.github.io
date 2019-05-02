@@ -1,0 +1,23 @@
+html {
+    max-width: 700px;
+    margin: auto;
+}
+
+#header {
+    height: 40px;
+    width: 100%;
+    background-color: #ffcccc;
+    position: fixed;
+    z-index: 1;
+}
+
+.head {
+    font-size: 20px;
+}
+
+@media print {
+    @page {
+        margin: 0;
+
+    }
+}
