@@ -3,7 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>MyResume Home</title>
-        <link rel="stylesheet" href="../styles/main.css">        
+        <link rel="stylesheet" href="../styles/main.css">
+
+        <script>
+            document.body.classList.add('js-loading');
+
+            window.addEventListener("load", showPage);
+
+            function showPage() {
+                document.body.classList.remove('js-loading');
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -44,15 +54,15 @@
         carousel();
 
         function carousel() {
-          var i;
-          var x = document.getElementsByClassName("slideshow");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
     </script>
 </html>
