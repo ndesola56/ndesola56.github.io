@@ -1,4 +1,5 @@
-function submitFile() {        
+function submitFile() {
+    'use strict';
     localStorage.setItem("first", document.getElementById("first").value);
     localStorage.setItem("last", document.getElementById("last").value);
     localStorage.setItem("email", document.getElementById("email").value);
@@ -14,5 +15,5 @@ function submitFile() {
 
     localStorage.setItem("experience", JSON.stringify(textarea));
 
-    window.open('completedResume.html','_self',false);
-};
+    window.open('completedResume.html', '_self', false);
+}
