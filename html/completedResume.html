@@ -12,14 +12,14 @@
         <h1 id="fullname">Resume</h1>
         <hr/>
         <br>
-        
+
         <p class="head">Contact Information</p>
         <ul>
             <li id="email">Email</li>
             <li id="phone">Phone</li>
             <li id="linkedin">LinkedIn</li>
         </ul>
-        
+
         <p class="head">Education</p>
         <ul>
             <li>Messiah College</li>
@@ -29,7 +29,7 @@
                 <li id="concentration">Concentration</li>
             </ul>
         </ul>
-        
+
         <p class="head">Experience</p>
         <ul id="expList">
         </ul>
@@ -53,7 +53,7 @@
             ul.appendChild(li);
         }
         var doc = new jsPDF();  
-        
+
         var elementHandler = {
             '#ignorePDF': function (element, renderer) {
                 return true;

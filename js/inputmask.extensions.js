@@ -16,7 +16,7 @@
         factory(window.Inputmask);
     }
 }
-(function (Inputmask) {
+ (function (Inputmask) {
     //extra definitions
     Inputmask.extendDefinitions({
         "A": {

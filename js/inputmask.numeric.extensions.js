@@ -16,7 +16,7 @@
         factory(window.Inputmask);
     }
 }
-(function (Inputmask) {
+ (function (Inputmask) {
     var $ = Inputmask.dependencyLib;
 
     function autoEscape(txt, opts) {
@@ -221,7 +221,7 @@
                     if (charAtPos !== opts.radixPoint &&
                         charAtPos !== opts.negationSymbol.front &&
                         (charAtPos !== opts.negationSymbol.back)
-                    ) {
+                       ) {
                         maskedValue[caretPos] = "?";
                         if (opts.prefix.length > 0 && caretPos >= (opts.isNegative === false ? 1 : 0) && caretPos < opts.prefix.length - 1 + (opts.isNegative === false ? 1 : 0)) {
                             prefix[caretPos - (opts.isNegative === false ? 1 : 0)] = "?";
@@ -313,8 +313,8 @@
                             processValue[caretPos] = charAtPos;
                         } else caretPos = currentResult.caret || 0;
                     } else if (charAtPos === opts.radixPoint ||
-                        charAtPos === opts.negationSymbol.front ||
-                        charAtPos === opts.negationSymbol.back) {
+                               charAtPos === opts.negationSymbol.front ||
+                               charAtPos === opts.negationSymbol.back) {
                         var newCaretPos = $.inArray(charAtPos, processValue);
                         if (newCaretPos !== -1) caretPos = newCaretPos;
                         // else charAtPos = undefined;
