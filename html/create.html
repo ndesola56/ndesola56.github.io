@@ -39,23 +39,23 @@
                 <h3>Basic Information</h3>
                 <table>
                     <tr>
-                        <td id="firstRow">First Name:&emsp;</td>
+                        <td class="firstRow">First Name:</td>
                         <td><input type="text" name="first" id="first"></td>
                     </tr>
                     <tr>
-                        <td>Last Name:</td>
+                        <td class="firstRow">Last Name:</td>
                         <td><input type="text" name="last" id="last"></td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
+                        <td class="firstRow">Email:</td>
                         <td><input type="text" name="email" id="email"></td>
                     </tr>
                     <tr>
-                        <td>LinkedIn:</td>
+                        <td class="firstRow">LinkedIn:</td>
                         <td><input type="text" name="linkedin" id="linkedin"></td>
                     </tr>
                     <tr>
-                        <td>Phone:</td>
+                        <td class="firstRow">Phone:</td>
                         <td><input type="text" name="phone" id="phone" class="phone" data-inputmask="'mask':['(999) 999-9999']"></td>
                     </tr>
                 </table><br>
@@ -68,34 +68,30 @@
 
                 <table>
                     <tr>
-                        <td>Major:</td>
+                        <td class="firstRow">Major:</td>
                         <td><input type="text" name="major" id="major"></td>
                     </tr>
                     <tr>
-                        <td>Minor:</td>
+                        <td class="firstRow">Minor:</td>
                         <td><input type="text" name="minor" id="minor"></td>
                     </tr>
                     <tr>
-                        <td>Concentration:</td>
+                        <td class="firstRow">Concentration:</td>
                         <td><input type="text" name="concentration" id="concentration"></td>
                     </tr>
                 </table>
                 <h3>Experience:</h3>
                 <table>
                     <tr>
-                        <td>Work and Volunteer:</td>
+                        <td class="firstRow">Work and Volunteer:</td>
                         <td><textarea rows="6" cols="50" placeholder="Enter each experience on a new line." id="experience"></textarea></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="button" id="submitBtn" onclick="submitFile()" value="Download!" style="font-size: 20px; border-radius: 10px;"></td>
-                    </tr>
                 </table>
+                <input type="button" id="submitBtn" onclick="submitFile()" value="Download!" style="font-size: 20px; border-radius: 10px;">
             </form>
         </main>
         <br><br>
         <footer>
-            <a href="create.html#top">BACK TO TOP</a>
             <p>Copyright &copy; 2019 Messiah College. All rights reserved.
         </footer>
     </body>
