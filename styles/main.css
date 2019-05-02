@@ -84,8 +84,12 @@ main {
 	font-weight: bold;
 }
 .answer {
-	padding-left: 3em;
     margin: 3%;
+    background-color: #687A85;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    
 }
 #temps {
 	text-align: center;
