@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>MyResume Creation</title>
         <link rel="stylesheet" href="../styles/main.css">
-        <script type="text/javascript" src="/js/functions.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
         <script src="/js/inputmask.extensions.js"></script>
         <script src="/js/inputmask.date.extensions.js"></script>
@@ -17,6 +16,8 @@
                 $("input").inputmask();
             });
         </script>
+        
+        <script type="text/javascript" src="/js/functions.js"></script>
     </head>
 
     <body>
@@ -55,7 +56,7 @@
                     </tr>
                     <tr>
                         <td>Phone:</td>
-                        <td><input type="text" name="phone" class="phone" data-inputmask="'mask':['(999) 999 - 9999']"></td>
+                        <td><input type="text" name="phone" id="phone" class="phone" data-inputmask="'mask':['(999) 999-9999']"></td>
                     </tr>
                 </table><br>
                 <h3>Education</h3>
@@ -94,7 +95,7 @@
         </main>
         <br><br>
         <footer>
-            <a href="create2.html#top">BACK TO TOP</a>
+            <a href="create.html#top">BACK TO TOP</a>
             <p>Copyright &copy; 2019 Messiah College. All rights reserved.
         </footer>
     </body>
