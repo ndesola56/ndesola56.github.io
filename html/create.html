@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>MyResume Creation</title>
-	<link rel="stylesheet" href="../styles/main.css">
-    <script type="text/javascript" src="/js/functions.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
-        crossorigin="anonymous"></script>
-    <script src="/js/jquery-input-mask-phone-number.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>MyResume Creation</title>
+        <link rel="stylesheet" href="../styles/main.css">
+        <script type="text/javascript" src="/js/functions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+        <script src="/js/inputmask.extensions.js"></script>
+        <script src="/js/inputmask.date.extensions.js"></script>
+        <script src="/js/inputmask.js"></script>
+        <script src="/js/inputmask.numeric.extensions.js"></script>
+        <script src="/js/jquery.inputmask.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(e) {
+                $("input").inputmask();
+            });
+        </script>
+    </head>
 
-<body>
-	<header>
-		<nav id="nav_menu">
-			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="samples.html">Samples</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a class="active" href="create.html">Create</a></li>
-			</ul>
-		</nav>
-		<h1 id="top">MyResume.com</h1>
-		<h4>For all your resume needs</h4>
-	</header>
-	<main>
-		<h2>Let's make you a simple and clean resume!</h2>
-		<form>
-			<h3>Basic Information</h3>
-			<table>
-				<tr>
-					<td id="firstRow">First Name:&emsp;</td>
-					<td><input type="text" name="first" id="first"></td>
-				</tr>
-				<tr>
-					<td>Last Name:</td>
-					<td><input type="text" name="last" id="last"></td>
-				</tr>
-				<tr>
-					<td>Email:</td>
-					<td><input type="text" name="email" id="email"></td>
-				</tr>
-				<tr>
-					<td>LinkedIn:</td>
-					<td><input type="text" name="linkedin" id="linkedin"></td>
-				</tr>
-				<tr>
-					<td>Phone:</td>
-					<td><input type="text" name="phone" class="phone" id="phone"></td>
-				</tr>
-			</table><br>
-			<h3>Education</h3>
-			Grade Level:
-			<input type="radio" name="grade" value="First Year">First Year&emsp;
-			<input type="radio" name="grade" value="Sophomore">Sophomore&emsp;
-			<input type="radio" name="grade" value="Junior">Junior&emsp;
-			<input type="radio" name="grade" value="Senior">Senior<br><br>
-			
-			<table>
-				<tr>
-					<td>Major:</td>
-					<td><input type="text" name="major" id="major"></td>
-				</tr>
-				<tr>
-					<td>Minor:</td>
-					<td><input type="text" name="minor" id="minor"></td>
-				</tr>
-				<tr>
-					<td>Concentration:</td>
-					<td><input type="text" name="concentration" id="concentration"></td>
-				</tr>
-			</table>
-			<h3>Experience:</h3>
-			<table>
-				<tr>
-					<td>Work and Volunteer:</td>
-					<td><textarea rows="6" cols="50" placeholder="Enter each experience on a new line." id="experience"></textarea></td>
-				</tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" id="submitBtn" onclick="submitFile()" value="Download!" style="font-size: 20px; border-radius: 10px;"></td>
-                </tr>
-			</table>
-		</form>
-	</main>
-	<br><br>
-	<footer>
-		<a href="create2.html#top">BACK TO TOP</a>
-		<p>Copyright &copy; 2019 Messiah College. All rights reserved.
-	</footer>
-</body>
+    <body>
+        <header>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="samples.html">Samples</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a class="active" href="create.html">Create</a></li>
+                </ul>
+            </nav>
+            <h1 id="top">MyResume.com</h1>
+            <h4>For all your resume needs</h4>
+        </header>
+        <main>
+            <h2>Let's make you a simple and clean resume!</h2>
+            <form>
+                <h3>Basic Information</h3>
+                <table>
+                    <tr>
+                        <td id="firstRow">First Name:&emsp;</td>
+                        <td><input type="text" name="first" id="first"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="last" id="last"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn:</td>
+                        <td><input type="text" name="linkedin" id="linkedin"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="text" name="phone" class="phone" data-inputmask="'mask':['(999) 999 - 9999']"></td>
+                    </tr>
+                </table><br>
+                <h3>Education</h3>
+                Grade Level:
+                <input type="radio" name="grade" value="First Year">First Year&emsp;
+                <input type="radio" name="grade" value="Sophomore">Sophomore&emsp;
+                <input type="radio" name="grade" value="Junior">Junior&emsp;
+                <input type="radio" name="grade" value="Senior">Senior<br><br>
+
+                <table>
+                    <tr>
+                        <td>Major:</td>
+                        <td><input type="text" name="major" id="major"></td>
+                    </tr>
+                    <tr>
+                        <td>Minor:</td>
+                        <td><input type="text" name="minor" id="minor"></td>
+                    </tr>
+                    <tr>
+                        <td>Concentration:</td>
+                        <td><input type="text" name="concentration" id="concentration"></td>
+                    </tr>
+                </table>
+                <h3>Experience:</h3>
+                <table>
+                    <tr>
+                        <td>Work and Volunteer:</td>
+                        <td><textarea rows="6" cols="50" placeholder="Enter each experience on a new line." id="experience"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" id="submitBtn" onclick="submitFile()" value="Download!" style="font-size: 20px; border-radius: 10px;"></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <br><br>
+        <footer>
+            <a href="create2.html#top">BACK TO TOP</a>
+            <p>Copyright &copy; 2019 Messiah College. All rights reserved.
+        </footer>
+    </body>
 </html>
