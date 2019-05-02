@@ -42,6 +42,11 @@ header {
     text-align: center;
 }
 
+#resume-sample {
+    width: 33%;
+    text-align: center;
+}
+
 footer a {
 	text-decoration: none;
 	background-color: #687A85;
